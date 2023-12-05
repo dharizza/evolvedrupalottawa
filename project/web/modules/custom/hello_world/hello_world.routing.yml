@@ -13,3 +13,11 @@ hello_world.hello_person:
     _controller: '\Drupal\hello_world\Controller\HelloWorldController::build'
   requirements:
     _permission: 'access content'
+
+hello_world.hello_get_node:
+  path: '/hello/{id}'
+  defaults:
+    _title: 'Get Node'
+    _controller: '\Drupal\hello_world\Controller\HelloWorldController::getNode'
+  requirements:
+    _permission: 'access content'

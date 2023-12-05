@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * 
+ * Hooks implementations for Hello World module.
+ */
+
+use \Drupal\Core\Form\FormStateInterface;
+
+function hello_world_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+    if ($form_id === 'node_article_form') {
+        $form['options']['#open'] = TRUE;
+
+        $user = \Drupal::currentUser();
+        ksm($user);
+        if (!$user->hasRole('content_editor')) {
+            $form['promote']['#access'] = FALSE;
+        }
+    }
+}
