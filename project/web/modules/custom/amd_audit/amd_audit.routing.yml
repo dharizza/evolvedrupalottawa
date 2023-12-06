@@ -1,0 +1,7 @@
+entity.deletion_record.settings:
+  path: 'admin/structure/deletion-record'
+  defaults:
+    _form: '\Drupal\amd_audit\Form\DeletionRecordSettingsForm'
+    _title: 'Deletion Record'
+  requirements:
+    _permission: 'administer deletion record'
