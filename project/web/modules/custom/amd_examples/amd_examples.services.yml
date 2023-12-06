@@ -1,0 +1,5 @@
+services:
+  text_transformer:
+    class: 'Drupal\amd_exampleshttps://dharizza-evolvedrupalot-8hspykfjlak.ws-us106.gitpod.io/\TransformText'
+    arguments:
+      - '@logger.factory'
