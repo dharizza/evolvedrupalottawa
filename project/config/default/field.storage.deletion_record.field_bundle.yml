@@ -1,0 +1,21 @@
+uuid: c774c122-6a89-4ba6-b5e8-7b2b77a79530
+langcode: en
+status: true
+dependencies:
+  module:
+    - amd_audit
+id: deletion_record.field_bundle
+field_name: field_bundle
+entity_type: deletion_record
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

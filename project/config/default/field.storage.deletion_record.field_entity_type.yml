@@ -1,0 +1,21 @@
+uuid: d34b8b35-f649-4389-9897-cd07a54b0eef
+langcode: en
+status: true
+dependencies:
+  module:
+    - amd_audit
+id: deletion_record.field_entity_type
+field_name: field_entity_type
+entity_type: deletion_record
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

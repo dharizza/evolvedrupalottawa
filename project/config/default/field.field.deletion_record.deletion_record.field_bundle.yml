@@ -1,0 +1,20 @@
+uuid: 2b979b74-7ded-4dbd-9696-c02ed78b68c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.deletion_record.field_bundle
+  module:
+    - amd_audit
+id: deletion_record.deletion_record.field_bundle
+field_name: field_bundle
+entity_type: deletion_record
+bundle: deletion_record
+label: Bundle
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 414616ee-4062-485c-bd73-6b252d7cb972
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.deletion_record.field_deleted
+  module:
+    - amd_audit
+id: deletion_record.deletion_record.field_deleted
+field_name: field_deleted
+entity_type: deletion_record
+bundle: deletion_record
+label: Deleted
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

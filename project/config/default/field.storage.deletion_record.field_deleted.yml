@@ -1,0 +1,18 @@
+uuid: b7ddc7de-1e66-477f-a251-9549374c7c1c
+langcode: en
+status: true
+dependencies:
+  module:
+    - amd_audit
+id: deletion_record.field_deleted
+field_name: field_deleted
+entity_type: deletion_record
+type: timestamp
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
