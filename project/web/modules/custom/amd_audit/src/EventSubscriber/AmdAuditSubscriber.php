@@ -22,15 +22,15 @@ class AmdAuditSubscriber implements EventSubscriberInterface {
    */
   public function createDeletionRecord(Event $event) {
     $deleted = $event->getEntity();
-    ksm($deleted);
 
     $record = \Drupal::entityTypeManager()
       ->getStorage('deletion_record')
       ->create([
-        'title' => 'DELETED' . $deleted->label(),
+        'label' => 'DELETED' . $deleted->label(),
         'field_title' => $deleted->label(),
         'field_bundle' => $deleted->bundle(),
         'field_entity_type' => $deleted->getEntityTypeId(),
+        'field_deleted' => time(),
         // 'field_entity_author' => $deleted->
       ]);
       $record->save();
