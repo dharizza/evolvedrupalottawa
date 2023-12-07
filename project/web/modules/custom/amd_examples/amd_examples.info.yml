@@ -1,0 +1,5 @@
+name: amd_examples
+type: module
+description: Examples for advanced module development.
+package: Custom
+core_version_requirement: ^9 || ^10

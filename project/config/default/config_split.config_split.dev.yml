@@ -1,0 +1,18 @@
+uuid: 4a4bfd1f-f805-4e1f-8aef-9f6513c882a5
+langcode: en
+status: false
+dependencies: {  }
+id: dev
+label: dev
+description: "config/default\r\nconfig/envs"
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: ../config/envs/dev
+module:
+  devel: 0
+  devel_generate: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

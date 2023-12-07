@@ -1,0 +1,5 @@
+services:
+  amd_audit.event_subscriber:
+    class: Drupal\amd_audit\EventSubscriber\AmdAuditSubscriber
+    tags:
+      - { name: event_subscriber }

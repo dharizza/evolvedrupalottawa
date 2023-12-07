@@ -1,0 +1,30 @@
+uuid: 9049e683-2547-4f60-a8fa-aa7f7f864dcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.deletion_record.field_entity_author
+  module:
+    - amd_audit
+id: deletion_record.deletion_record.field_entity_author
+field_name: field_entity_author
+entity_type: deletion_record
+bundle: deletion_record
+label: 'Entity Author'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

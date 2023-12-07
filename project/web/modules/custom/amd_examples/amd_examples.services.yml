@@ -1,0 +1,5 @@
+services:
+  text_transformer:
+    class: 'Drupal\amd_examples\TransformText'
+    arguments:
+      - '@logger.factory'

@@ -1,0 +1,20 @@
+uuid: fe495c04-9711-484e-b3f5-e83aedd7a727
+langcode: en
+status: true
+dependencies:
+  module:
+    - amd_audit
+    - user
+id: deletion_record.field_deleted_by
+field_name: field_deleted_by
+entity_type: deletion_record
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

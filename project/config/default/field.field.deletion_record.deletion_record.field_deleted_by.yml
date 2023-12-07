@@ -1,0 +1,30 @@
+uuid: 5f6ce6d2-b0ed-4a75-9ef5-f909ec5c7d44
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.deletion_record.field_deleted_by
+  module:
+    - amd_audit
+id: deletion_record.deletion_record.field_deleted_by
+field_name: field_deleted_by
+entity_type: deletion_record
+bundle: deletion_record
+label: 'Deleted by'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    filter:
+      type: _none
+    include_anonymous: true
+field_type: entity_reference

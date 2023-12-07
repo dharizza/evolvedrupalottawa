@@ -261,7 +261,8 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-$settings['config_sync_directory'] = '../config';
+$settings['config_sync_directory'] = '../config/default';
+$config['config_split.config_split.dev']['status'] = TRUE;
 
 /**
  * Settings:
